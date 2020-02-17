@@ -1,0 +1,8 @@
+type: "sw.container"  
+slug: "enforce-supervisor-and-l4t"  
+name: "Enforce supervisor and l4t requirements"  
+requires:  
+  - type: "sw.supervisor"
+    version: ">=10.3.7"
+  - type: "sw.l4t"
+    version: ">=20.2"

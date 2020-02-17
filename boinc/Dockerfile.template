@@ -1,0 +1,11 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-ubuntu 
+
+WORKDIR /var/lib/boinc-client
+
+RUN install_packages boinc-client vim
+
+COPY ./account_setiathome.berkeley.edu.xml ./
+
+VOLUME /var/lib/boinc-client
+
+CMD ["boinc"]

@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+  boinc:
+    build: ./boinc
+    container_name: boinc
+  cuda:
+    build: ./cuda
+    labels:
+        io.balena.features.optional: '1'
+    container_name: cuda
